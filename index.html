@@ -147,7 +147,7 @@ and open the template in the editor.
                 updateClock();
                 var timeinterval = setInterval(updateClock, 1000);
             }
-            var deadline = 'December 31 ' + getFullYear() + ' 23:59:59 GMT+0530';
+            var deadline = 'December 31 ' + (new Date()).getFullYear() + ' 23:59:59 GMT+0530';
             initializeClock('clockdiv', deadline);
         </script>
         
